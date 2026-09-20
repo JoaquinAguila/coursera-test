@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Food, LLC — Freshly Made</title>
+
+  <!-- Bootstrap 3.3 -->
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default site-navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button"
+                class="navbar-toggle collapsed visible-xs"
+                data-toggle="collapse"
+                data-target="#mobile-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#top">
+          <span class="brand-mark">F</span>
+          <span>Food, LLC</span>
+        </a>
+      </div>
+
+      <div id="mobile-menu" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#chicken">Chicken</a></li>
+          <li><a href="#beef">Beef</a></li>
+          <li><a href="#sushi">Sushi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow">FRESH • SIMPLE • DELICIOUS</span>
+        <h1>Good food,<br><em>made with care.</em></h1>
+        <p class="hero-copy">
+          Thoughtfully prepared dishes, quality ingredients, and flavors
+          worth slowing down for.
+        </p>
+        <a class="btn btn-primary hero-button" href="#our-menu">Explore our menu</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <main>
+    <section id="our-menu" class="menu-intro">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="eyebrow">OUR MENU</span>
+          <h2>Made for every craving.</h2>
+          <p>From comforting classics to fresh favorites, there is something here for everyone.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Required tall Bootstrap grid section -->
+    <div class="container-fluid menu-grid">
+      <div class="row">
+
+        <section class="col-xs-12 menu-section chicken-card" id="chicken">
+          <div class="menu-card-content">
+            <div class="dish-icon">✦</div>
+            <span class="dish-label">01 / SIGNATURE</span>
+            <h3>Chicken</h3>
+            <p class="dish-description">
+              Tender, beautifully seasoned chicken prepared with fresh herbs,
+              bright citrus, and a balance of comforting flavors.
+            </p>
+            <div class="dish-divider"></div>
+            <p class="dish-copy">
+              Our kitchen keeps every bite simple and satisfying. We start
+              with quality ingredients, cook with intention, and finish with
+              flavors that let the food speak for itself.
+            </p>
+            <a href="#top" class="back-top">Back to top <span>↑</span></a>
+          </div>
+        </section>
+
+        <section class="col-xs-12 menu-section beef-card" id="beef">
+          <div class="menu-card-content">
+            <div class="dish-icon">✦</div>
+            <span class="dish-label">02 / SIGNATURE</span>
+            <h3>Beef</h3>
+            <p class="dish-description">
+              Rich, savory flavors meet carefully selected ingredients in a
+              dish designed for a satisfying, hearty meal.
+            </p>
+            <div class="dish-divider"></div>
+            <p class="dish-copy">
+              From the first sear to the final garnish, every detail is
+              considered. Bold flavor does not need to be complicated.
+            </p>
+            <a href="#top" class="back-top">Back to top <span>↑</span></a>
+          </div>
+        </section>
+
+        <section class="col-xs-12 menu-section sushi-card" id="sushi">
+          <div class="menu-card-content">
+            <div class="dish-icon">✦</div>
+            <span class="dish-label">03 / SIGNATURE</span>
+            <h3>Sushi</h3>
+            <p class="dish-description">
+              Fresh ingredients, delicate textures, and clean flavors come
+              together for a lighter way to enjoy something special.
+            </p>
+            <div class="dish-divider"></div>
+            <p class="dish-copy">
+              Carefully prepared and thoughtfully presented, each piece is
+              designed around freshness, balance, and a little bit of joy.
+            </p>
+            <a href="#top" class="back-top">Back to top <span>↑</span></a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">Food, LLC</div>
+      <p>Fresh food. Thoughtfully made.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+    // Close the mobile menu after selecting a menu item.
+    $('.navbar-nav a').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
+  </script>
+</body>
+</html>
