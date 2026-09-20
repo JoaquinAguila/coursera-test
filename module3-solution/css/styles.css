@@ -1,0 +1,451 @@
+/*
+ * Food, LLC — Professional Theme
+ * Bootstrap 3.3 compatible
+ */
+
+:root {
+  --ink: #18211d;
+  --muted: #6b746f;
+  --cream: #f7f4ed;
+  --paper: #fffdf8;
+  --sage: #52685b;
+  --sage-dark: #35483d;
+  --gold: #c99a4a;
+  --line: rgba(24, 33, 29, .13);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ---------- Navigation ---------- */
+
+.site-navbar {
+  min-height: 76px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: rgba(255, 253, 248, .98);
+  box-shadow: 0 1px 0 var(--line);
+  position: relative;
+  z-index: 20;
+}
+
+.site-navbar .container {
+  min-height: 76px;
+}
+
+.navbar-brand {
+  height: 76px;
+  padding: 20px 15px;
+  color: var(--ink) !important;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -.3px;
+}
+
+.brand-mark {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: var(--sage-dark);
+  color: #fff;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 19px;
+  line-height: 35px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.navbar-toggle {
+  margin-top: 20px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent !important;
+}
+
+.navbar-toggle .icon-bar {
+  background: var(--ink);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 30%, rgba(201,154,74,.30) 0 11%, transparent 11.2%),
+    radial-gradient(circle at 88% 65%, rgba(82,104,91,.22) 0 18%, transparent 18.2%),
+    linear-gradient(120deg, #e8e3d6 0%, #f7f4ed 55%, #dce5dd 100%);
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  right: 5%;
+  top: 45px;
+  border: 1px solid rgba(53,72,61,.16);
+  border-radius: 50%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  padding: 85px 15px;
+}
+
+.eyebrow {
+  color: var(--sage);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.6px;
+}
+
+.hero h1 {
+  margin: 17px 0 18px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 64px;
+  line-height: 1.03;
+  letter-spacing: -2px;
+}
+
+.hero h1 em {
+  color: var(--sage-dark);
+  font-weight: 600;
+}
+
+.hero-copy {
+  max-width: 510px;
+  margin-bottom: 30px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.btn-primary {
+  padding: 14px 24px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--sage-dark);
+  box-shadow: 0 8px 20px rgba(53,72,61,.15);
+  font-weight: 700;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--sage);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(53,72,61,.22);
+}
+
+/* ---------- Menu heading ---------- */
+
+.menu-intro {
+  padding: 90px 0 55px;
+  background: var(--paper);
+}
+
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.section-heading h2 {
+  margin: 10px 0 13px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 46px;
+  line-height: 1.15;
+}
+
+.section-heading p {
+  margin: 0 auto;
+  max-width: 600px;
+  color: var(--muted);
+}
+
+/* ---------- Menu cards ---------- */
+
+.menu-grid {
+  padding: 0 30px 80px;
+  background: var(--paper);
+}
+
+.menu-section {
+  min-height: 720px;
+  padding: 75px 9%;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-section:before {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  right: -70px;
+  top: -70px;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 50%;
+}
+
+.chicken-card {
+  background: #d9e3d9;
+}
+
+.beef-card {
+  background: #e6d8cb;
+}
+
+.sushi-card {
+  background: #d9e1e6;
+}
+
+.menu-card-content {
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.dish-icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 26px;
+  border: 1px solid rgba(24,33,29,.35);
+  border-radius: 50%;
+  color: var(--sage-dark);
+  line-height: 39px;
+  text-align: center;
+}
+
+.dish-label {
+  color: rgba(24,33,29,.62);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.menu-section h3 {
+  margin: 10px 0 18px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 60px;
+  line-height: 1;
+}
+
+.dish-description {
+  max-width: 650px;
+  color: rgba(24,33,29,.76);
+  font-size: 21px;
+  line-height: 1.55;
+}
+
+.dish-divider {
+  width: 55px;
+  height: 2px;
+  margin: 30px 0;
+  background: var(--gold);
+}
+
+.dish-copy {
+  max-width: 650px;
+  color: rgba(24,33,29,.68);
+}
+
+.back-top {
+  display: inline-block;
+  margin-top: 35px;
+  color: var(--sage-dark);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .4px;
+  text-decoration: none;
+}
+
+.back-top span {
+  margin-left: 7px;
+}
+
+.back-top:hover,
+.back-top:focus {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  padding: 55px 0;
+  background: var(--ink);
+  color: rgba(255,255,255,.65);
+  text-align: center;
+}
+
+.footer-brand {
+  margin-bottom: 6px;
+  color: #fff;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 25px;
+}
+
+.site-footer p {
+  margin: 0 0 18px;
+}
+
+.site-footer a {
+  color: #d9c08c;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 767px) {
+  .site-navbar,
+  .site-navbar .container {
+    min-height: 66px;
+  }
+
+  .navbar-brand {
+    height: 66px;
+    padding: 15px;
+    font-size: 21px;
+  }
+
+  .brand-mark {
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 17px;
+  }
+
+  .navbar-toggle {
+    margin-top: 15px;
+  }
+
+  .navbar-collapse {
+    padding: 0;
+    border-top: 1px solid var(--line);
+    background: var(--paper);
+  }
+
+  .navbar-nav {
+    margin: 0;
+    width: 100%;
+  }
+
+  .navbar-nav > li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav > li > a {
+    padding: 15px;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink) !important;
+    font-weight: 600;
+  }
+
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero:after {
+    width: 280px;
+    height: 280px;
+    right: -110px;
+    top: 90px;
+  }
+
+  .hero-content {
+    padding: 75px 15px;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+    letter-spacing: -1.2px;
+  }
+
+  .hero-copy {
+    font-size: 16px;
+  }
+
+  .menu-intro {
+    padding: 65px 0 40px;
+  }
+
+  .section-heading h2 {
+    font-size: 36px;
+  }
+
+  .menu-grid {
+    padding: 0 15px 50px;
+  }
+
+  .menu-section {
+    min-height: 650px;
+    width: 100%;
+    padding: 55px 28px;
+  }
+
+  .menu-section h3 {
+    font-size: 48px;
+  }
+
+  .dish-description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  
+  #mobile-menu.navbar-collapse {
+    display: none !important;
+  }
+
+  .site-navbar .navbar-nav,
+  .site-navbar .navbar-nav > li,
+  .site-navbar .navbar-nav > li > a {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero h1 {
+    font-size: 56px;
+  }
+
+  .menu-section {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-section {
+    min-height: 760px;
+  }
+}
